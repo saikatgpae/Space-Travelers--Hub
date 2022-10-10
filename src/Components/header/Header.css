@@ -1,0 +1,37 @@
+.nav-menu {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header {
+  display: flex;
+}
+
+h1 {
+  align-self: center;
+}
+
+.nav-bar {
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav-menu li {
+  align-self: center;
+  list-style-type: none;
+  margin: 0;
+  text-decoration: none;
+  padding: 0 2vw 0 2vw;
+  color: dodgerblue;
+}
+
+.logo {
+  width: 15vw;
+  height: 15vw;
+}
+
+.mission {
+  border-right: 2px solid black;
+}
