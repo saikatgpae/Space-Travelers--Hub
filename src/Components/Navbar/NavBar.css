@@ -24,7 +24,6 @@ h1 {
   margin: 0;
   text-decoration: none;
   padding: 0 2vw 0 2vw;
-  color: dodgerblue;
 }
 
 .logo {
@@ -32,6 +31,17 @@ h1 {
   height: 15vw;
 }
 
-.mission {
+.nav-menu li:nth-child(2) {
   border-right: 2px solid black;
+}
+
+.rockets,
+.mission,
+.my-profile {
+  text-decoration: none;
+}
+
+.active {
+  /* color: rgb(218, 42, 209); */
+  text-decoration: underline;
 }
