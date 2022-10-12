@@ -29,8 +29,7 @@ h1 {
 }
 
 .logo {
-  width: 15vw;
-  height: 15vw;
+  width: 100px;
 }
 
 .nav-menu li:nth-child(2) {
