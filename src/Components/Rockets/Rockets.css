@@ -1,3 +1,11 @@
-* {
-  background-color: white;
+img {
+  width: auto;
+  height: 250px;
+}
+
+.reserveButton {
+  background-color: #0290ff;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
 }
