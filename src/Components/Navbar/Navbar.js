@@ -5,7 +5,7 @@ import logo from './logo.png';
 
 export default function NavBar() {
   return (
-    <div className="header p-4">
+    <div className="header p-2">
       <img className="logo" src={logo} alt="logo" />
       <nav className="nav-bar">
         <h1>Space Travelers&apos; Hub</h1>
