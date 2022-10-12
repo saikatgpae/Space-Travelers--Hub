@@ -1,16 +1,18 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import Navbar from './Components/Navbar/Navbar';
-import ProfilePage from './Components/ProfilePage/ProfilePage';
+import { Route, Routes } from 'react-router-dom';
+import NavBar from './Components/Navbar/NavBar';
+import Mission from './Components/Mission/Mission';
+import Rockets from './Components/Rockets/Rokets';
+import Myprofile from './Components/MyProfile/Myprofile';
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <NavBar />
       <Routes>
-        <Route path="/" element={<h1>Rockets</h1>} />
-        <Route path="/missions" element={<h1>Missions</h1>} />
-        <Route path="/profile" element={<ProfilePage />} />
+        <Route path="/rockets" element={<Rockets />} />
+        <Route path="/missions" element={<Mission />} />
+        <Route path="/myprofile" element={<Myprofile />} />
       </Routes>
     </div>
   );
