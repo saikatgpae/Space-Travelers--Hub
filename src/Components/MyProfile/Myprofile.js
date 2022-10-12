@@ -8,7 +8,7 @@ export default function Myprofile() {
         <div className="col-6">
           <h5 className="col-12 py-3">My Missions</h5>
           <table className="col-12 row">
-            <tbody>
+            <tbody className="col-12">
               <tr className="col-12 row">
                 <td className="col-12 py-3">Mission Name</td>
                 <td className="col-12 py-3">Mission Name</td>
@@ -18,17 +18,19 @@ export default function Myprofile() {
             </tbody>
           </table>
         </div>
-        <h5 className="col-12 py-3">My Rockets</h5>
-        <table className="col-6">
-          <tbody>
-            <tr className="col-12 row">
-              <td className="col-12 py-3">Rocket Name</td>
-              <td className="col-12 py-3">Rocket Name</td>
-              <td className="col-12 py-3">Rocket Name</td>
-              <td className="col-12 py-3">Rocket Name</td>
-            </tr>
-          </tbody>
-        </table>
+        <div className="col-6">
+          <h5 className="col-12 py-3">My Rockets</h5>
+          <table className="col-12">
+            <tbody className="col-12">
+              <tr className="col-12 row">
+                <td className="col-12 py-3">Rocket Name</td>
+                <td className="col-12 py-3">Rocket Name</td>
+                <td className="col-12 py-3">Rocket Name</td>
+                <td className="col-12 py-3">Rocket Name</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   );
