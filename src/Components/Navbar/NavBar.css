@@ -30,6 +30,7 @@ h1 {
 
 .logo {
   width: 100px;
+  height: auto;
 }
 
 .nav-menu li:nth-child(2) {
