@@ -5,6 +5,8 @@
 
 .header {
   display: flex;
+  border-bottom: solid rgb(202, 198, 198);
+  border-width: 2px;
 }
 
 h1 {
