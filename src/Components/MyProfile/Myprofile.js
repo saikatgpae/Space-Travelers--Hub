@@ -1,7 +1,9 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import './MyProfile.css';
 
 export default function Myprofile() {
+  const rockets = useSelector((state) => state.rocketsReducer);
   return (
     <div className="container my-5">
       <div className="row">
@@ -23,10 +25,14 @@ export default function Myprofile() {
           <table className="col-12">
             <tbody className="col-12">
               <tr className="col-12 row">
-                <td className="col-12 py-3">Rocket Name</td>
-                <td className="col-12 py-3">Rocket Name</td>
-                <td className="col-12 py-3">Rocket Name</td>
-                <td className="col-12 py-3">Rocket Name</td>
+                {rockets.map((i) => (
+                  <td
+                    className="col-12 py-3"
+                    key={i.rocket_id}
+                  >
+                    {i.rocket_name}
+                  </td>
+                ))}
               </tr>
             </tbody>
           </table>
