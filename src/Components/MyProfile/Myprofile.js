@@ -4,7 +4,9 @@ import './MyProfile.css';
 
 export default function Myprofile() {
   const rockets = useSelector((state) => state.rocketsReducer);
+  const rocketsReserved = rockets.filter((rocket) => rocket.reserved === true);
   const missions = useSelector((state) => state.missionsReducer);
+  const missionsJoined = missions.filter((mission) => mission.joined === true);
   return (
     <div className="container my-5">
       <div className="row">
@@ -13,7 +15,7 @@ export default function Myprofile() {
           <table className="col-12 row">
             <tbody className="col-12">
               <tr className="col-12 row">
-                {missions.map((mission) => (
+                {missionsJoined.map((mission) => (
                   (
                     <td key={mission.mission_id} className="col-12 py-3">{mission.mission_name}</td>
                   )
@@ -27,7 +29,7 @@ export default function Myprofile() {
           <table className="col-12">
             <tbody className="col-12">
               <tr className="col-12 row">
-                {rockets.map((i) => (
+                {rocketsReserved.map((i) => (
                   <td
                     className="col-12 py-3"
                     key={i.rocket_id}
