@@ -9,3 +9,23 @@ img {
   color: #fff;
   border-radius: 5px;
 }
+
+.cancelButton {
+  border: 1px solid #b6babe;
+  color: #788087;
+  border-radius: 5px;
+  background-color: #fcfcfc;
+}
+
+.reservedStausActive {
+  border: 1px solid #000;
+  color: #ff0202;
+}
+
+.reservedStausActive:active {
+  display: inline-table;
+}
+
+.reservedStaus {
+  display: none;
+}
