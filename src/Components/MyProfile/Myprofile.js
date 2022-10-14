@@ -4,6 +4,7 @@ import './MyProfile.css';
 
 export default function Myprofile() {
   const rockets = useSelector((state) => state.rocketsReducer);
+  const missions = useSelector((state) => state.missionsReducer);
   return (
     <div className="container my-5">
       <div className="row">
@@ -12,10 +13,11 @@ export default function Myprofile() {
           <table className="col-12 row">
             <tbody className="col-12">
               <tr className="col-12 row">
-                <td className="col-12 py-3">Mission Name</td>
-                <td className="col-12 py-3">Mission Name</td>
-                <td className="col-12 py-3">Mission Name</td>
-                <td className="col-12 py-3">Mission Name</td>
+                {missions.map((mission) => (
+                  (
+                    <td key={mission.mission_id} className="col-12 py-3">{mission.mission_name}</td>
+                  )
+                ))}
               </tr>
             </tbody>
           </table>
