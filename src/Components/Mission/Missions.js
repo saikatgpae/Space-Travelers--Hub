@@ -29,6 +29,7 @@ export default function Missions() {
               id={mission.mission_id}
               name={mission.mission_name}
               description={mission.description}
+              joined={mission.joined}
             />
           ))}
         </tbody>
