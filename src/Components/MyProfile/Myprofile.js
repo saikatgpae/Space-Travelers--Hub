@@ -8,7 +8,7 @@ export default function Myprofile() {
   const missions = useSelector((state) => state.missionsReducer);
   const missionsJoined = missions.filter((mission) => mission.joined === true);
   return (
-    <div className="container my-5">
+    <div className="container my-5" data-testid="myprofile-list">
       <div className="row">
         <div className="col-6">
           <h5 className="col-12 py-3">My Missions</h5>

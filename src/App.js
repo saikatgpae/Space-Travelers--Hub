@@ -7,7 +7,7 @@ import Myprofile from './Components/MyProfile/Myprofile';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" data-testid="App">
       <div className="main p-4">
         <NavBar />
         <Routes>
