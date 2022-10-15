@@ -1,0 +1,55 @@
+.mission-table {
+  border-collapse: collapse;
+  width: 100%;
+  border: solid #ddd;
+}
+
+.mission-table tr th {
+  border: solid #ddd;
+}
+
+.mission-table tr td {
+  border: solid #ddd;
+}
+
+.mission-table tr:nth-child(even) {
+  background-color: #f2f4f6;
+}
+
+.mission-name,
+.mission-status,
+.mission-join {
+  white-space: nowrap;
+}
+
+.mission-name {
+  font-weight: bold;
+  vertical-align: text-top;
+  width: 15%;
+}
+
+.mission-status {
+  border-radius: 4px;
+}
+
+.active-member {
+  background-color: rgb(14, 154, 156);
+  color: white;
+}
+
+.inactive-member {
+  background-color: rgb(57, 70, 77);
+  color: white;
+}
+
+.join-button {
+  border-radius: 4px;
+  padding: 5px;
+  font-size: large;
+  background-color: white;
+}
+
+.inactive {
+  border: solid red;
+  color: red;
+}

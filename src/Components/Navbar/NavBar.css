@@ -1,0 +1,49 @@
+.nav-menu {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header {
+  display: flex;
+  border-bottom: solid rgb(202, 198, 198);
+  border-width: 2px;
+}
+
+h1 {
+  align-self: center;
+}
+
+.nav-bar {
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav-menu li {
+  align-self: center;
+  list-style-type: none;
+  margin: 0;
+  text-decoration: none;
+  padding: 0 2vw 0 2vw;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+.nav-menu li:nth-child(2) {
+  border-right: 2px solid black;
+}
+
+.rockets,
+.mission,
+.my-profile {
+  text-decoration: none;
+}
+
+.active {
+  /* color: rgb(218, 42, 209); */
+  text-decoration: underline;
+}
